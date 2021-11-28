@@ -1,0 +1,35 @@
+#Body {
+    height: 500px;
+    background-color: #eee;
+}
+
+.Body-triangle {
+    height: 25vw;
+    background-color: #eee;
+}
+
+.Body-triangle.top {
+    clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+    margin-top: calc(-25vw + 1px);
+
+}
+
+.Body-triangle.bottom {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    margin-bottom: calc(-25vw + 1px);
+}
+
+.Body-logo {
+    position: relative;
+    width: 50vw;
+    /* min-width: 50px; */
+    max-width: 300px;
+}
+
+@media (min-width: 768px) {
+    .Body-logo {
+        top: -25vw;
+        margin-bottom: -25vw;
+        width: 22vw;
+    }
+}

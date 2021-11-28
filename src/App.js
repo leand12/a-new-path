@@ -1,14 +1,19 @@
 import './App.css';
 import Header from 'components/Header';
-import Presentation from 'components/Presentation';
+import Body from 'components/Body';
+import Footer from 'components/Footer';
+import Banner from 'components/Banner';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div style={{width: "100%", height: 1000, backgroundColor: "red"}}></div>
-      <Presentation />
-      <div style={{width: "100%", height: 1000, backgroundColor: "blue"}}></div>
+      <Banner />
+
+      <Body />
+
+      <div style={{ width: "100%", height: 1000, backgroundColor: "blue" }}></div>
+      <Footer />
     </div>
   );
 }
