@@ -15,3 +15,52 @@
     background-position: center;
     background-size: cover;
 }
+
+
+.hexagon h1, .hexagon p {
+    margin: 0;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #eee;
+    -webkit-transition: -webkit-transform .2s ease-out, opacity .3s ease-out;
+    transition: transform .2s ease-out, opacity .3s ease-out;
+}
+
+.hexagon h1 {
+    bottom: 50%;
+    padding-top: 50%;
+    z-index: 1;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.hexagon h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 10%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.hexagon p {
+    top: 50%;
+    padding-bottom: 50%;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+
+.hexagon:hover h1, .hexagon:focus h1,
+.hexagon:hover p, .hexagon:focus p {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
