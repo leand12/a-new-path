@@ -4,6 +4,7 @@
     justify-content: center;
 
     height: 70vh;
+    min-height: 50vw;
 
     background-color: #1E3F8E;
     background-image: linear-gradient(315deg, #1E3F8E 0%, #008A52 100%);
