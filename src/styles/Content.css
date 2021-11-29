@@ -14,8 +14,8 @@
     clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0);
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
-
 
 .hexagon h1, .hexagon p {
     margin: 0;
@@ -63,4 +63,16 @@
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 900px) {
+    .hexa-row:nth-child(2n) {
+        margin-top: -2vw;
+        padding: 0 7.5vw;
+    }
+
+    .hexagon {
+        width: 15vw;
+        height: 15vw;
+    }
 }
