@@ -21,16 +21,22 @@ export default function Content() {
     }, [])
 
     return (
-        <>
-            <h2>Equipa</h2>
-            <ul>
-                <li>Organização de um convívio temático.</li>
-                <li>Organização de um jantar de gala.</li>
-                <li>Participação no Enterro.</li>
-                <li>Organização do Rally das Tascas.</li>
-                <li>Exploração da possibilidade de um novo Sunset.</li>
-            </ul>
-            <div className="hexa-row">
+        <div id="Content">
+            <div className="content-wrapper">
+                <h2>Equipa</h2>
+                <ul>
+                    <li>Organização de um convívio temático.</li>
+                    <li>Organização de um jantar de gala.</li>
+                    <li>Participação no Enterro.</li>
+                    <li>Organização do Rally das Tascas.</li>
+                    <li>Exploração da possibilidade de um novo Sunset.</li>
+                </ul>
+            </div>
+            <div className="hexa-wrapper">
+                <div className="hexagon" style={{ backgroundImage: `url(${eu})` }}>
+                    <h1>Leandro Silva</h1>
+                    <p>1º ano MEI</p>
+                </div>
                 <div className="hexagon" style={{ backgroundImage: `url(${eu})` }}>
                     <h1>Leandro Silva</h1>
                     <p>1º ano MEI</p>
@@ -40,12 +46,6 @@ export default function Content() {
                     <p>1º ano MEI</p>
                 </div>
             </div>
-            <div className="hexa-row">
-                <div className="hexagon" style={{ backgroundImage: `url(${eu})` }}>
-                    <h1>Leandro Silva</h1>
-                    <p>1º ano MEI</p>
-                </div>
-            </div>
-        </>
+        </div>
     );
 }
