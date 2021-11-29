@@ -1,7 +1,10 @@
-svg.Presentation {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
+#Presentation {
+    position: absolute;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    #Presentation {
+        display: none;
+    }
 }

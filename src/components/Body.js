@@ -1,5 +1,6 @@
 import "styles/Body.css";
 import Presentation from 'components/Presentation';
+import Content from 'components/Content';
 import logo from 'assets/logo.webp';
 
 export default function Body() {
@@ -7,10 +8,14 @@ export default function Body() {
         <>
             <div className="Body-triangle top"></div>
             <div id="Body">
-                <img className="Body-logo" src={logo} />
+                <div className="Body-logo">
+                    <img src={logo} />
+                </div>
                 <Presentation />
+                <div className="Body-content">
+                    <Content />  
+                </div>
 
-               
             </div>
             <div className="Body-triangle bottom"></div>
         </>

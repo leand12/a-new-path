@@ -1,5 +1,4 @@
 #Body {
-    height: 500px;
     background-color: #eee;
 }
 
@@ -20,16 +19,32 @@
 }
 
 .Body-logo {
+    min-height: 30vh;
+}
+
+.Body-logo>img {
     position: relative;
     width: 50vw;
     /* min-width: 50px; */
     max-width: 300px;
 }
 
+.Body-content {
+    overflow: auto;
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+
 @media (min-width: 768px) {
-    .Body-logo {
+    .Body-logo>img {
         top: -25vw;
         margin-bottom: -25vw;
         width: 22vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .Body-logo {
+        min-height: 0px;
     }
 }

@@ -1,0 +1,17 @@
+.hexa-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hexa-row:nth-child(2n) {
+    margin-top: -8vw;
+    padding: 0 25vw;
+}
+
+.hexagon {
+    width: 50vw;
+    height: 50vw;
+    clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0);
+    background-position: center;
+    background-size: cover;
+}

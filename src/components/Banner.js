@@ -57,7 +57,7 @@ export default function Banner() {
 
     return (
         <div id="Banner">
-            <svg ref={svgRef} className="Banner" preserveAspectRatio="xMidYMid meet" x="0" y="0">
+            <svg ref={svgRef} preserveAspectRatio="xMidYMid meet" x="0" y="0">
                 <defs>
                     <g id="hexa">
                         <polygon points="19.9,69 0,34.5 19.9,0 59.7,0 79.6,34.5 59.7,69" opacity="0.3" />
