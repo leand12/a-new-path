@@ -120,7 +120,7 @@ export default function Banner() {
             <div className="Banner-slogan">
                 <h1 className="noselect">LISTA P</h1>
                 <img src={slogan} />
-                <button className="button button-slide" style={{marginTop: 40}}><span>Follow Us On</span></button>
+                <button className="button button-slide"><span>Follow Us On</span></button>
             </div>
         </div>
     )

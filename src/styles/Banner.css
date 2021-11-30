@@ -38,6 +38,25 @@
     margin: 0 auto;
 }
 
+.Banner-slogan>.button {
+    margin-top: 1em;
+}
+
+@media (max-width: 900px) {
+
+    @media (max-height: 481px) {
+        #Banner {
+            height: 100vh;
+        }
+    }
+
+    @media (max-height: 320px) {
+        #Banner {
+            height: calc(100vh + 25vw);
+        }
+    }
+    
+}
 
 @media (min-width: 900px) {
 
