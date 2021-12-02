@@ -1,13 +1,12 @@
 .Body-triangle {
     height: 25vw;
-    background-color: #eee;
     margin-top: calc(-25vw + 1px);
     margin-bottom: calc(-25vw + 1px);
 }
 
 .Body-triangle.white {
     height: 10vw;
-    background-color: whitesmoke;
+    background: whitesmoke;
     margin-top: calc(-10vw + 1px);
     margin-bottom: calc(-10vw + 1px);
 }
