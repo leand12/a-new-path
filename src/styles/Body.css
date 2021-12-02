@@ -29,6 +29,7 @@
     overflow: auto;
     min-height: 100vh;
     font-family: 'Poppins';
+    padding: 0
 }
 
 @media (min-width: 768px) {
@@ -42,5 +43,9 @@
 @media (min-width: 900px) {
     .Body-logo {
         min-height: 0px;
+    }
+
+    .Body-content {
+        padding: 0 20%;
     }
 }

@@ -1,4 +1,4 @@
-import "styles/Content.css";
+import "styles/Sections.css";
 import { useEffect, useState } from "react";
 import * as d3 from "d3";
 import { data } from './data';
@@ -29,6 +29,7 @@ const CustomTabs = styled((props) => (
     '& .MuiTabs-indicatorSpan': {
         maxWidth: 40,
         width: '100%',
+        backgroundColor: 'rgb(0, 138, 82)'
     },
 });
 
@@ -55,7 +56,7 @@ const CustomTab = styled((props) => <Tab disableRipple {...props} />)(
     }),
 );
 
-export default function Content() {
+export default function Sections() {
 
     const [value, setValue] = useState(0)
 
@@ -70,12 +71,10 @@ export default function Content() {
             .style("background-color", (d, i) => `rgba(${color(i)}, 0.6)`);
         d3.select('.MuiTabs-indicatorSpan')
             .style("background-color", `rgb(${color(value + 1)})`);
-
     }, [value])
 
     return (
-        <div id="Content">
-            {/* <Box sx={{ maxWidth: 480, bgcolor: 'background.paper' }}> */}
+        <div id="Sections">
             <CustomTabs
                 value={value}
                 onChange={handleChange}
@@ -83,7 +82,7 @@ export default function Content() {
                 scrollButtons
                 allowScrollButtonsMobile
                 aria-label="scrollable force tabs example"
-                sx={{ margin: 'auto' }}
+                sx={{ margin: '2rem 0' }}
             >
                 {
                     data.map(({ section }, index) =>
@@ -104,7 +103,7 @@ export default function Content() {
                         data[value].members.map((member, index) => (
                             <div key={index} className="hexagon"
                                 style={data[value].members.length == 1 ?
-                                    { backgroundImage: `url(${member.image})`, marginLeft: "25%" } : 
+                                    { backgroundImage: `url(${member.image})`, marginLeft: "25%" } :
                                     { backgroundImage: `url(${member.image})` }}
                             >
                                 <h1>{member.name}</h1>

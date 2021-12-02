@@ -1,6 +1,6 @@
 import "styles/Body.css";
 import Presentation from 'components/Presentation';
-import Content from 'components/Content';
+import Sections from 'components/Sections';
 import logo from 'assets/logo.webp';
 
 export default function Body() {
@@ -13,7 +13,14 @@ export default function Body() {
                 </div>
                 <Presentation />
                 <div className="Body-content">
-                    <Content />  
+                    <div>
+                        <h2>dsf</h2>
+                        <p>A Lista P apresenta-se como candidata à coordenação do
+                        NEI para o próximo mandato, com a finalidade de proporcionar
+                        aos estudantes um mandato repleto de atividades que
+                        aproximem e capacitem os alunos de EI.</p>
+                    </div>
+                    <Sections />
                 </div>
 
             </div>
