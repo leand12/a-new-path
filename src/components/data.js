@@ -1,21 +1,37 @@
-import eu from 'assets/eu.jpg';
+import artur from 'assets/members/Artur.jpg';
+import daniel from 'assets/members/Daniel.jpg';
+import fabio from 'assets/members/Fabio.jpg';
+import hugo from 'assets/members/Hugo.jpg';
+import leandro from 'assets/members/Leandro.jpg';
+import matilde from 'assets/members/Matilde.jpg';
+import miguel from 'assets/members/Miguel.jpg';
+import paulo from 'assets/members/Paulo.jpg';
+import pedro from 'assets/members/Pedro.jpg';
+import rafaela from 'assets/members/Rafaela.jpg';
+import renato from 'assets/members/Renato.jpg';
+import tiago from 'assets/members/Tiago.jpg';
+import vicente from 'assets/members/Vicente.jpg';
+import yanis from 'assets/members/Yanis.jpg';
 
 export const data = [
     {
-        section: "Coordenador + RF",
+        section: "Direção",
         content: (
-            <></>
+            <ul>
+                <li>Ser voz ativa na <b>AAUAv</b>;</li>
+                <li>Aprofundar as <b>relações do núcleo</b> com entidades exteriores.</li>
+            </ul>
         ),
         members: [
             {
                 name: "Pedro Figueiredo",
                 year: "3º ano LEI",
-                image: eu,
+                image: pedro,
             },
             {
                 name: "Artur Correia",
                 year: "2º ano LEI",
-                image: eu,
+                image: artur,
             },
         ],
     },
@@ -23,23 +39,23 @@ export const data = [
         section: "Académica",
         content: (
             <ul>
-                <li>Organização de um convívio temático;</li>
-                <li>Organização de um jantar de gala;</li>
-                <li>Participação no Enterro;</li>
-                <li>Organização do Rally das Tascas;</li>
-                <li>Exploração da possibilidade de um novo Sunset.</li>
+                <li>Organização de um <b>convívio temático</b>;</li>
+                <li>Organização de um <b>jantar de gala</b>;</li>
+                <li>Participação no <b>Enterro</b>;</li>
+                <li>Organização do <b>Rally das Tascas</b>;</li>
+                <li>Exploração da possibilidade de um novo <b>Sunset</b>.</li>
             </ul>
         ),
         members: [
             {
                 name: "Fábio Martins",
                 year: "3º ano LEI",
-                image: eu,
+                image: fabio,
             },
             {
                 name: "Daniel Ferreira",
                 year: "2º ano LEI",
-                image: eu,
+                image: daniel,
             },
         ],
     },
@@ -48,17 +64,17 @@ export const data = [
         content: (
             <ul>
                 <li>Rever a infraestrutura da plataforma;</li>
-                <li>Criar uma secção para promover a divulgação de estágios
-                    de verão;</li>
-                <li>Criar uma secção direcionada à faina para registar as
-                    famílias de praxe.</li>
+                <li>Criar uma secção para promover a divulgação de <b>estágios
+                    de verão</b>;</li>
+                <li>Criar uma secção direcionada à faina para registar as <b>famílias
+                    de faina</b>.</li>
             </ul>
         ),
         members: [
             {
                 name: "Leandro Silva",
                 year: "1º ano MEI",
-                image: eu,
+                image: leandro,
             },
         ],
     },
@@ -66,9 +82,9 @@ export const data = [
         section: "Comunicação e Imagem",
         content: (
             <ul>
-                <li>Manter uma presença ativas nas redes sociais;</li>
-                <li>Promover atividade no Discord do núcleo;</li>
-                <li>Promover e divulgar os eventos do núcleo, através dos meios de
+                <li>Manter uma presença ativas nas <b>redes sociais</b>;</li>
+                <li>Promover atividade no <b>Discord</b> do núcleo;</li>
+                <li>Promover e divulgar os <b>eventos</b> do núcleo, através dos meios de
                     comunicação deste.</li>
             </ul>
         ),
@@ -76,12 +92,12 @@ export const data = [
             {
                 name: "Yanis Faquir",
                 year: "3º ano LEI",
-                image: eu,
+                image: yanis,
             },
             {
                 name: "Matilde Teixeira",
                 year: "1º ano LEI",
-                image: eu,
+                image: matilde,
             },
         ],
     },
@@ -89,7 +105,7 @@ export const data = [
         section: "Desportiva",
         content: (
             <ul>
-                <li>Incentivar a claque de EI;</li>
+                <li>Incentivar a <b>claque de EI</b>;</li>
                 <li>Ajudar os atletas a manterem se em forma de forma a puderem
                     dar o melhor de si;</li>
                 <li>Manter todos os estudantes a par dos resultados e jogos em que
@@ -102,12 +118,12 @@ export const data = [
             {
                 name: "Paulo Pereira",
                 year: "3º ano LEI",
-                image: eu,
+                image: paulo,
             },
             {
                 name: "Hugo Correia",
                 year: "1º ano LEI",
-                image: eu,
+                image: hugo,
             },
         ],
     },
@@ -115,13 +131,13 @@ export const data = [
         section: "Pedagógica e Social",
         content: (
             <ul>
-                <li>Organizar Workshops e Palestras que permitam complementar a
+                <li>Organizar <b>Workshops e Palestras</b> que permitam complementar a
                     formação dada pela universidade;</li>
-                <li>Organizar Sessões de Dúvidas de diversas UCs, de forma a promover
+                <li>Organizar <b>Sessões de Dúvidas</b> de diversas UCs, de forma a promover
                     a entreajuda;</li>
-                <li>Recolher apontamentos de alunos de anos anteriores, de forma a
+                <li>Recolher <b>apontamentos</b> de alunos de anos anteriores, de forma a
                     complementar a lista já existente;</li>
-                <li>Recolher opções de Estágios de Verão e de Ofertas de
+                <li>Recolher opções de <b>Estágios de Verão</b> e de Ofertas de
                     Emprego num só canal, para que os estudantes interessados
                     tenham acesso facilitado aos mesmos.</li>
             </ul>
@@ -130,12 +146,12 @@ export const data = [
             {
                 name: "Miguel Ferreira",
                 year: "3º ano LEI",
-                image: eu,
+                image: miguel,
             },
             {
                 name: "Vicente Barros",
                 year: "2º ano LEI",
-                image: eu,
+                image: vicente,
             },
         ],
     },
@@ -143,11 +159,11 @@ export const data = [
         section: "Mesa da RGM",
         content: (
             <ul>
-                <li>Marcar as reuniões com temáticas referentes ao Plano de Atividades
-                    e Orçamentos e Relatório Final de Contas;</li>
+                <li>Marcar as reuniões com temáticas referentes ao <b>Plano de Atividades
+                    e Orçamentos e Relatório Final de Contas</b>;</li>
                 <li>Prestar atenção a todos os estudantes e assuntos relacionados com os
                     mesmos, defendendo todos os seus direitos e interesses;</li>
-                <li>Realizar uma sondagem em forma de inquérito aos estudantes de EI,
+                <li>Realizar uma <b>sondagem</b> em forma de inquérito aos estudantes de EI,
                     procurando ter mais informações sobre o que estes gostariam de ver
                     realizado durante o mandato.</li>
             </ul>
@@ -156,17 +172,17 @@ export const data = [
             {
                 name: "Renato Dias",
                 year: "3º ano LEI",
-                image: eu,
+                image: renato,
             },
             {
                 name: "Tiago Gomes",
                 year: "1º ano LEI",
-                image: eu,
+                image: tiago,
             },
             {
                 name: "Rafaela Abrunhosa",
                 year: "1º ano LEI",
-                image: eu,
+                image: rafaela,
             },
         ],
     }
