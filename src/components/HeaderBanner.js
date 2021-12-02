@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
-import "styles/Banner.css";
+import "styles/HeaderBanner.css";
 import slogan from 'assets/slogan.webp';
 
 
-export default function Banner() {
+export default function HeaderBanner() {
     const svgRef = useRef();
 
     const width = 1600;
@@ -51,12 +51,12 @@ export default function Banner() {
         motionElems = svg.selectAll(".motion");
 
         svg.on('mousemove', motionAnimation);
-        d3.select(".Banner-slogan").on('mousemove', motionAnimation);
+        d3.select(".HeaderBanner-slogan").on('mousemove', motionAnimation);
         floatAnimation();
     }, []);
 
     return (
-        <div id="Banner">
+        <div id="HeaderBanner">
             <svg ref={svgRef} preserveAspectRatio="xMidYMid meet" x="0" y="0">
                 <defs>
                     <g id="hexa">
@@ -117,7 +117,7 @@ export default function Banner() {
                     </g>
                 </g>
             </svg>
-            <div className="Banner-slogan">
+            <div className="HeaderBanner-slogan">
                 <h1 className="noselect">LISTA P</h1>
                 <img src={slogan} />
                 <button className="button button-slide"><span>Follow Us On</span></button>

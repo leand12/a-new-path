@@ -1,0 +1,46 @@
+#FooterBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 70vh;
+    min-height: 50vw;
+
+    background-color: #00607b;
+    /* background-image: linear-gradient(315deg, #1E3F8E 0%, #008A52 100%); */
+}
+
+#FooterBanner svg {
+    position: absolute;
+}
+
+@media (max-width: 900px) {
+
+    @media (max-height: 481px) {
+        #FooterBanner {
+            height: 100vh;
+        }
+    }
+
+    @media (max-height: 320px) {
+        #FooterBanner {
+            height: calc(100vh + 25vw);
+        }
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    #FooterBanner {
+        height: 100vh;
+    }
+
+    .FooterBanner-slogan>h1 {
+        font-size: 6em;
+    }
+
+    .FooterBanner-slogan>img {
+        height: 4.5em;
+    }
+}

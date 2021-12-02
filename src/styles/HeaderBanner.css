@@ -1,4 +1,4 @@
-#Banner {
+#HeaderBanner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,16 +10,16 @@
     background-image: linear-gradient(315deg, #1E3F8E 0%, #008A52 100%);
 }
 
-#Banner svg {
+#HeaderBanner svg {
     position: absolute;
 }
 
-.Banner-slogan {
+.HeaderBanner-slogan {
     padding-bottom: 25vw;
     overflow: hidden;
 }
 
-.Banner-slogan>h1 {
+.HeaderBanner-slogan>h1 {
     font-size: 4em;
     font-weight: bold;
     font-family: 'Poppins';
@@ -32,26 +32,26 @@
     background-clip: text;
 }
 
-.Banner-slogan>img {
+.HeaderBanner-slogan>img {
     height: 2.5em;
     display: block;
     margin: 0 auto;
 }
 
-.Banner-slogan>.button {
+.HeaderBanner-slogan>.button {
     margin-top: 1em;
 }
 
 @media (max-width: 900px) {
 
     @media (max-height: 481px) {
-        #Banner {
+        #HeaderBanner {
             height: 100vh;
         }
     }
 
     @media (max-height: 320px) {
-        #Banner {
+        #HeaderBanner {
             height: calc(100vh + 25vw);
         }
     }
@@ -60,15 +60,15 @@
 
 @media (min-width: 900px) {
 
-    #Banner {
+    #HeaderBanner {
         height: 100vh;
     }
 
-    .Banner-slogan>h1 {
+    .HeaderBanner-slogan>h1 {
         font-size: 6em;
     }
 
-    .Banner-slogan>img {
+    .HeaderBanner-slogan>img {
         height: 4.5em;
     }
 }
