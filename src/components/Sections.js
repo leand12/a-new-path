@@ -1,5 +1,6 @@
 import "styles/Sections.css";
 import { useEffect, useState } from "react";
+import classNames from 'classnames';
 import * as d3 from "d3";
 import { data } from './data';
 import Tabs from '@mui/material/Tabs';
@@ -58,10 +59,12 @@ const CustomTab = styled((props) => <Tab disableRipple {...props} />)(
 
 export default function Sections() {
 
-    const [value, setValue] = useState(0)
+    const [animation, setAnimation] = useState(true);
+    const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
+        setAnimation(true);
     };
 
     useEffect(() => {
@@ -71,6 +74,8 @@ export default function Sections() {
             .style("background-color", (d, i) => `rgba(${color(i)}, 0.6)`);
         d3.select('.MuiTabs-indicatorSpan')
             .style("background-color", `rgb(${color(value + 1)})`);
+        d3.select('ul li::marker')
+            .style("color", `rgb(${color(value + 1)})`);
     }, [value])
 
     return (
@@ -82,7 +87,6 @@ export default function Sections() {
                 scrollButtons
                 allowScrollButtonsMobile
                 aria-label="scrollable force tabs example"
-                sx={{ margin: '2rem 0' }}
             >
                 {
                     data.map(({ section }, index) =>
@@ -93,21 +97,26 @@ export default function Sections() {
 
             <div className="tab-content">
 
-                <div className="content-wrapper">
+                <div className={classNames("content-container", { "bottom-fade-out": animation })}
+                    onAnimationEnd={() => setAnimation(false)}
+                >
                     {
                         data[value].content
                     }
                 </div>
-                <div className="hexa-wrapper">
+                <div className="hexa-container">
                     {
                         data[value].members.map((member, index) => (
-                            <div key={index} className="hexagon"
-                                style={data[value].members.length == 1 ?
-                                    { backgroundImage: `url(${member.image})`, marginLeft: "25%" } :
-                                    { backgroundImage: `url(${member.image})` }}
+                            <div key={index}
+                                className={classNames("hexagon-wrapper", { "bottom-fade-out": animation })}
+                                style={data[value].members.length == 1 ? { marginLeft: "25%" } : {}}
                             >
-                                <h1>{member.name}</h1>
-                                <p>{member.year}</p>
+                                <div className="hexagon"
+                                    style={{ backgroundImage: `url(${member.image})` }}
+                                >
+                                    <h1>{member.name}</h1>
+                                    <p>{member.year}</p>
+                                </div>
                             </div>
                         ))
                     }

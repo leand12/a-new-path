@@ -1,6 +1,7 @@
 #Presentation {
     position: absolute;
     width: 100%;
+    margin-top: 5rem;
 }
 
 @media (max-width: 768px) {

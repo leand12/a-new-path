@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #eee;
+  font-family: 'Poppins', sans-serif;
 }
 
 .button {
@@ -54,4 +55,20 @@
 
 .button-slide:hover::before {
   transform: skew(30deg);
+}
+
+.bottom-fade-out {
+  animation: bottomFadeOut 600ms;
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 10px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }

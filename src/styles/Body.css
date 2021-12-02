@@ -1,17 +1,25 @@
 .Body-triangle {
     height: 25vw;
     background-color: #eee;
+    margin-top: calc(-25vw + 1px);
+    margin-bottom: calc(-25vw + 1px);
+}
+
+.Body-triangle.white {
+    height: 10vw;
+    background-color: whitesmoke;
+    margin-top: calc(-10vw + 1px);
+    margin-bottom: calc(-10vw + 1px);
 }
 
 .Body-triangle.top {
     clip-path: polygon(50% 0%, 0 100%, 100% 100%);
-    margin-top: calc(-25vw + 1px);
-
+    margin-bottom: 0;
 }
 
 .Body-triangle.bottom {
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    margin-bottom: calc(-25vw + 1px);
+    margin-top: 0;
 }
 
 .Body-logo {
@@ -26,10 +34,11 @@
 }
 
 .Body-content {
-    overflow: auto;
-    min-height: 100vh;
-    font-family: 'Poppins';
-    padding: 0
+    padding: 0;
+}
+
+.Body-content.white {
+    background-color: whitesmoke;
 }
 
 @media (min-width: 768px) {

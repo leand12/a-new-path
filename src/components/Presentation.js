@@ -6,8 +6,8 @@ import "styles/Presentation.css";
 export default function Presentation() {
     const svgRef = useRef();
 
-    const width = 1600;
-    const height = 1200;
+    const width = 1400;
+    const height = 800;
 
     let svg;
 
