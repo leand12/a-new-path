@@ -6,8 +6,8 @@ import "styles/Presentation.css";
 export default function Presentation() {
     const svgRef = useRef();
 
-    const width = window.screen.availWidth;
-    const height = window.screen.availHeight;
+    const width = window.screen.availWidth*.8;
+    const height = window.screen.availHeight*.8;
 
     let svg;
 

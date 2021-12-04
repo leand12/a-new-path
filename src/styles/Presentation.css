@@ -1,8 +1,9 @@
 #Presentation {
     position: absolute;
     width: 100%;
-    margin-top: 10rem;
-    z-index: 20;
+    margin-top: 6.5rem;
+    z-index: 5;
+    pointer-events: none;
 }
 
 @media (max-width: 900px) {
