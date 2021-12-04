@@ -16,12 +16,13 @@ import yanis from 'assets/members/Yanis.jpg';
 export const data = [
     {
         section: "Direção",
-        content: (
+        content: <>
+            <p>&ensp;Objetivos:</p>
             <ul>
                 <li>Ser voz ativa na <b>AAUAv</b>;</li>
                 <li>Aprofundar as <b>relações do núcleo</b> com entidades exteriores.</li>
             </ul>
-        ),
+        </>,
         members: [
             {
                 name: "Pedro Figueiredo",
@@ -37,7 +38,8 @@ export const data = [
     },
     {
         section: "Académica",
-        content: (
+        content: <>
+            <p>&ensp;Objetivos:</p>
             <ul>
                 <li>Organização de um <b>convívio temático</b>;</li>
                 <li>Organização de um <b>jantar de gala</b>;</li>
@@ -45,7 +47,7 @@ export const data = [
                 <li>Organização do <b>Rally das Tascas</b>;</li>
                 <li>Exploração da possibilidade de um novo <b>Sunset</b>.</li>
             </ul>
-        ),
+        </>,
         members: [
             {
                 name: "Fábio Martins",
@@ -61,7 +63,8 @@ export const data = [
     },
     {
         section: "Administrativa",
-        content: (
+        content: <>
+            <p>&ensp;Objetivos:</p>
             <ul>
                 <li>Rever a infraestrutura da plataforma;</li>
                 <li>Criar uma secção para promover a divulgação de <b>estágios
@@ -69,7 +72,7 @@ export const data = [
                 <li>Criar uma secção direcionada à faina para registar as <b>famílias
                     de faina</b>.</li>
             </ul>
-        ),
+        </>,
         members: [
             {
                 name: "Leandro Silva",
@@ -80,14 +83,15 @@ export const data = [
     },
     {
         section: "Comunicação e Imagem",
-        content: (
+        content: <>
+            <p>&ensp;Objetivos:</p>
             <ul>
                 <li>Manter uma presença ativas nas <b>redes sociais</b>;</li>
                 <li>Promover atividade no <b>Discord</b> do núcleo;</li>
                 <li>Promover e divulgar os <b>eventos</b> do núcleo, através dos meios de
                     comunicação deste.</li>
             </ul>
-        ),
+        </>,
         members: [
             {
                 name: "Yanis Faquir",
@@ -103,7 +107,8 @@ export const data = [
     },
     {
         section: "Desportiva",
-        content: (
+        content: <>
+            <p>&ensp;Objetivos:</p>
             <ul>
                 <li>Incentivar a <b>claque de EI</b>;</li>
                 <li>Ajudar os atletas a manterem se em forma de forma a puderem
@@ -113,7 +118,7 @@ export const data = [
                 <li>Divulgar e dar a conhecer as atividades desportivas oferecidas pela
                     Universidade.</li>
             </ul>
-        ),
+        </>,
         members: [
             {
                 name: "Paulo Pereira",
@@ -129,7 +134,8 @@ export const data = [
     },
     {
         section: "Pedagógica e Social",
-        content: (
+        content: <>
+            <p>&ensp;Objetivos:</p>
             <ul>
                 <li>Organizar <b>Workshops e Palestras</b> que permitam complementar a
                     formação dada pela universidade;</li>
@@ -141,7 +147,7 @@ export const data = [
                     Emprego num só canal, para que os estudantes interessados
                     tenham acesso facilitado aos mesmos.</li>
             </ul>
-        ),
+        </>,
         members: [
             {
                 name: "Miguel Ferreira",
@@ -157,7 +163,8 @@ export const data = [
     },
     {
         section: "Mesa da RGM",
-        content: (
+        content: <>
+            <p>&ensp;Objetivos:</p>
             <ul>
                 <li>Marcar as reuniões com temáticas referentes ao <b>Plano de Atividades
                     e Orçamentos e Relatório Final de Contas</b>;</li>
@@ -167,7 +174,7 @@ export const data = [
                     procurando ter mais informações sobre o que estes gostariam de ver
                     realizado durante o mandato.</li>
             </ul>
-        ),
+        </>,
         members: [
             {
                 name: "Renato Dias",

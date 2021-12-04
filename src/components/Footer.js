@@ -1,5 +1,9 @@
 import "styles/Footer.css";
 
 export default function Footer() {
-    return null;
+    return (
+        <div id="Footer">
+            skld
+        </div>
+    );
 }

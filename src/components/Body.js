@@ -17,7 +17,7 @@ export default function Body() {
 
                 <div className="Body-content pt-5 pb-5">
                     <div>
-                        <h2>Quem?</h2>
+                        <h1 className="py-5 pt-md-0">Quem somos?</h1>
                         <p>A <strong>Lista P</strong> apresenta-se como candidata à coordenação do
                             NEI para o próximo mandato, com a finalidade de proporcionar
                             aos estudantes um mandato repleto de atividades que
@@ -65,7 +65,7 @@ export default function Body() {
                             aproximem e capacitem os <strong>alunos de EI</strong>.</p>
 
                         <a href="ListaP_EI3.2.pdf" download="ListaP_EI3.2.pdf">
-                            <button className="button button-slide"><span>Follow Us On</span></button>
+                            <button className="button button-slide"><span>Programa Mandato 2022</span></button>
                         </a>
                     </div>
                 </div>

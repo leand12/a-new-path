@@ -60,6 +60,7 @@
 }
 
 .social {
+    padding: 3em 0;
     margin: auto;
     display: flex;
     width: 100%;
@@ -129,17 +130,17 @@
 }
 
 .social-hexagon:hover {
-    border-radius: 20px;
+    border-radius: 0px 30px;
     transition: 0.5s;
 }
 
 .social-hexagon:hover:before {
-    border-radius: 20px;
+    border-radius: 0px 30px;
     transition: 0.5s;
 }
 
 .social-hexagon:hover:after {
-    border-radius: 20px;
+    border-radius: 0px 30px;
     transition: 0.5s;
 }
 

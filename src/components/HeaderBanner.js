@@ -45,6 +45,7 @@ export default function HeaderBanner() {
     function floatAnimation() {
         invert = !invert;
         floatElems.transition()
+            .delay(100)
             .duration(3000)
             .ease(d3.easeSinInOut)
             .attr("transform", function () {

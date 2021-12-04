@@ -80,6 +80,7 @@ export default function Sections() {
 
     return (
         <div id="Sections">
+            <h1 className="py-5 pt-md-0">O que pretendemos?</h1>
             <CustomTabs
                 value={value}
                 onChange={handleChange}

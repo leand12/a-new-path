@@ -8,7 +8,7 @@
   pointer-events: auto;
   cursor: pointer;
   background: transparent;
-  border: 2px solid #eee;
+  border: 3px solid #004889;
   padding: 0.5rem 3rem;
   margin: 0;
   font-family: inherit;
@@ -30,14 +30,14 @@
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   overflow: hidden;
-  color: #eee;
+  color: #004889;
   background: transparent;
 }
 
 .button-slide:hover {
-  color: black;
+  color: white;
 }
 
 .button-slide span {
@@ -46,7 +46,7 @@
 
 .button-slide::before {
   content: '';
-  background: #eee;
+  background: linear-gradient(-180deg, #127bd6, #004889);
   width: 130%;
   left: -15%;
   transform: translate3d(100%, 0, 0);
