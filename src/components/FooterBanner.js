@@ -6,8 +6,8 @@ import "styles/FooterBanner.css";
 export default function FooterBanner() {
     const svgRef = useRef();
 
-    const width = 1600;
-    const height = 600;
+    const width = window.screen.availWidth;
+    const height = window.screen.availHeight/2;
 
     let svg;
 
@@ -47,7 +47,7 @@ export default function FooterBanner() {
                     </g>
                 </g>
 
-                <g transform="translate(1300, 20)">
+                <g transform={`translate(${width - 300}, 20)`}>
                     <g className="float inverse">
                         <use href="#tri" fill="#fff" transform="translate(150, 350) rotate(-17) scale(0.7)" />
                     </g>

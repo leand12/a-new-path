@@ -21,8 +21,8 @@ const CustomFab = styled((props) => (
 export default function HeaderBanner() {
     const svgRef = useRef();
 
-    const width = 1600;
-    const height = 700;
+    const width = window.screen.availWidth;
+    const height = window.screen.availHeight;
     const interp = d3.interpolateNumber(0, 40);
 
     let svg, floatElems, motionElems;
@@ -109,7 +109,7 @@ export default function HeaderBanner() {
                     </g>
                 </g>
 
-                <g transform="translate(1300, 20)">
+                <g transform={`translate(${width - 300}, 20)`}>
                     <g className="motion" data-scale="0.7">
                         <g className="float inverse">
                             <use href="#tri" fill="#fff" transform="translate(150, 350) rotate(-17) scale(0.7)" />

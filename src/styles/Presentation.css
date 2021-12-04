@@ -1,10 +1,11 @@
 #Presentation {
     position: absolute;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    z-index: 20;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #Presentation {
         display: none;
     }

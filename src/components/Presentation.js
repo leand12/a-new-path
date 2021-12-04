@@ -6,13 +6,13 @@ import "styles/Presentation.css";
 export default function Presentation() {
     const svgRef = useRef();
 
-    const width = 1400;
-    const height = 800;
+    const width = window.screen.availWidth;
+    const height = window.screen.availHeight;
 
     let svg;
 
     function moveHexaByScroll() {
-        let scrollPos = d3.select("#Presentation").node().getBoundingClientRect().top - 200;
+        let scrollPos = d3.select("#Presentation").node().getBoundingClientRect().top - 250;
         scrollPos = scrollPos < 0 ? 0 : scrollPos;
 
         d3.selectAll(".hexas-left use")
