@@ -17,11 +17,29 @@ export default function Body() {
 
                 <div className="Body-content pt-5 pb-5">
                     <div>
-                        <h2>dsf</h2>
+                        <h2>Quem?</h2>
                         <p>A <strong>Lista P</strong> apresenta-se como candidata à coordenação do
                             NEI para o próximo mandato, com a finalidade de proporcionar
                             aos estudantes um mandato repleto de atividades que
                             aproximem e capacitem os <strong>alunos de EI</strong>.</p>
+                    </div>
+
+                    <div className="social">
+                        <div className="social-hexagon-wrapper">
+                            <div className="social-hexagon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </div>
+                        <div className="social-hexagon-wrapper">
+                            <div className="social-hexagon">
+                                <i className="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div className="social-hexagon-wrapper">
+                            <div className="social-hexagon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -45,6 +63,10 @@ export default function Body() {
                             NEI para o próximo mandato, com a finalidade de proporcionar
                             aos estudantes um mandato repleto de atividades que
                             aproximem e capacitem os <strong>alunos de EI</strong>.</p>
+
+                        <a href="ListaP_EI3.2.pdf" download="ListaP_EI3.2.pdf">
+                            <button className="button button-slide"><span>Follow Us On</span></button>
+                        </a>
                     </div>
                 </div>
             </div>

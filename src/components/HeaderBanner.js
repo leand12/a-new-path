@@ -1,11 +1,22 @@
 import { useEffect, useRef } from "react";
-import * as d3 from "d3";
-import "styles/HeaderBanner.css";
-import slogan from 'assets/slogan.webp';
+
+import { styled } from '@mui/material/styles';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Fab from '@mui/material/Fab';
+import * as d3 from "d3";
+
+import slogan from 'assets/slogan.webp';
+import 'styles/HeaderBanner.css';
+
+const CustomFab = styled((props) => (
+    <Fab {...props} />
+))({
+    boxShadow: '0px 1px 4px 1px rgba(0,0,0,0.12),0px 1px 4px 1px rgba(0,0,0,0.24)',
+    margin: '1rem',
+});
+
 
 export default function HeaderBanner() {
     const svgRef = useRef();
@@ -122,19 +133,9 @@ export default function HeaderBanner() {
             </svg>
             <div className="HeaderBanner-slogan">
                 <h1 className="noselect">LISTA P</h1>
+
                 <img src={slogan} />
-                <a href="ListaP_EI3.2.pdf" download="ListaP_EI3.2.pdf">
-                    <button className="button button-slide"><span>Follow Us On</span></button>
-                </a>
-                <Fab color="primary" aria-label="add">
-                    <FacebookIcon />
-                </Fab>
-                <Fab color="secondary" aria-label="add">
-                    <InstagramIcon />
-                </Fab>
-                <Fab color="info" aria-label="add">
-                    <YouTubeIcon />
-                </Fab>
+
             </div>
         </div>
     )
