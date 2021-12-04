@@ -3,7 +3,7 @@ import "styles/Footer.css";
 export default function Footer() {
     return (
         <div id="Footer">
-            skld
+            <p>© Lista P, 2021</p>
         </div>
     );
 }

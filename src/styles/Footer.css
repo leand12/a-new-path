@@ -1,5 +1,6 @@
 #Footer {
     margin-top: -2em;
     height: 2em;
-    font-size: 1em;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: #ddd;
 }
