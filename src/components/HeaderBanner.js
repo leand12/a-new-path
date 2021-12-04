@@ -123,7 +123,9 @@ export default function HeaderBanner() {
             <div className="HeaderBanner-slogan">
                 <h1 className="noselect">LISTA P</h1>
                 <img src={slogan} />
-                <button className="button button-slide"><span>Follow Us On</span></button>
+                <a href="ListaP_EI3.2.pdf" download="ListaP_EI3.2.pdf">
+                    <button className="button button-slide"><span>Follow Us On</span></button>
+                </a>
                 <Fab color="primary" aria-label="add">
                     <FacebookIcon />
                 </Fab>
