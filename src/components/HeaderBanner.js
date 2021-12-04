@@ -2,7 +2,10 @@ import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import "styles/HeaderBanner.css";
 import slogan from 'assets/slogan.webp';
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import Fab from '@mui/material/Fab';
 
 export default function HeaderBanner() {
     const svgRef = useRef();
@@ -121,6 +124,15 @@ export default function HeaderBanner() {
                 <h1 className="noselect">LISTA P</h1>
                 <img src={slogan} />
                 <button className="button button-slide"><span>Follow Us On</span></button>
+                <Fab color="primary" aria-label="add">
+                    <FacebookIcon />
+                </Fab>
+                <Fab color="secondary" aria-label="add">
+                    <InstagramIcon />
+                </Fab>
+                <Fab color="info" aria-label="add">
+                    <YouTubeIcon />
+                </Fab>
             </div>
         </div>
     )

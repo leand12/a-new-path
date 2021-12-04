@@ -7,13 +7,15 @@ import bg from 'assets/background.webp';
 export default function Body() {
     return (
         <>
-            <div className="Body-triangle top" style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }}></div>
-            <div style={{ overflow: 'auto', backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }}>
+            <div className="Body-triangle top">
+                <div className="clip" style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }}></div>
+            </div>
+            <div id="Body" style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }}>
                 <div className="Body-logo">
                     <img src={logo} />
                 </div>
 
-                <div className="Body-content mt-5 mb-5">
+                <div className="Body-content pt-5 pb-5">
                     <div>
                         <h2>dsf</h2>
                         <p>A <strong>Lista P</strong> apresenta-se como candidata à coordenação do
@@ -23,16 +25,20 @@ export default function Body() {
                     </div>
                 </div>
 
-                <div className="Body-triangle top white m-0"></div>
+                <div className="Body-triangle top white">
+                    <div className="clip"></div>
+                </div>
 
                 <Presentation />
                 <div className="Body-content white">
                     <Sections />
                 </div>
 
-                <div className="Body-triangle bottom white"></div>
+                <div className="Body-triangle bottom white">
+                    <div className="clip"></div>
+                </div>
 
-                <div className="Body-content mt-5 mb-5">
+                <div className="Body-content pt-5 pb-5">
                     <div>
                         <h2>dsf</h2>
                         <p>A <strong>Lista P</strong> apresenta-se como candidata à coordenação do
@@ -42,7 +48,9 @@ export default function Body() {
                     </div>
                 </div>
             </div>
-            <div className="Body-triangle bottom" style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }}></div>
+            <div className="Body-triangle bottom">
+                <div className="clip" style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }}></div>
+            </div>
         </>
     );
 }
