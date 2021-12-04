@@ -22,6 +22,9 @@ const CustomTabs = styled((props) => (
         TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
     />
 ))({
+    '& .MuiButtonBase-root': {
+        fontSize: 'clamp(0.925rem, 1.6vw, 1.2rem)',
+    },
     '& .MuiTabs-indicator': {
         display: 'flex',
         justifyContent: 'center',

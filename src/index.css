@@ -12,12 +12,20 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 b {
   font-weight: 500 !important;
 }
 
 ul {
   list-style-type: square;
+}
+
+li:not(:last-child) {
+  margin-bottom: clamp(2px, 2vw, 20px);
 }
 
 .noselect {

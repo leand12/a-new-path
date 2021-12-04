@@ -1,7 +1,7 @@
 #Presentation {
     position: absolute;
     width: 100%;
-    margin-top: 6.5rem;
+    margin-top: 8rem;
     z-index: 5;
     pointer-events: none;
 }
