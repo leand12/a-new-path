@@ -7,7 +7,7 @@ export default function FooterBanner() {
     const svgRef = useRef();
 
     const width = window.screen.availWidth;
-    const height = window.screen.availHeight/2;
+    const height = window.screen.availHeight/4;
 
     useEffect(() => {
         d3.select(svgRef.current)

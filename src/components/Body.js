@@ -6,7 +6,7 @@ import logo from 'assets/logo.webp';
 import bg from 'assets/background.webp';
 
 export default function Body() {
-    const [mobile, setMobile] = useState(false);
+    const [mobile, setMobile] = useState(true);
 
     useEffect(() => {
         const mql = window.matchMedia('(min-width: 900px)');
