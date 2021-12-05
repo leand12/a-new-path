@@ -9,10 +9,8 @@ export default function FooterBanner() {
     const width = window.screen.availWidth;
     const height = window.screen.availHeight/2;
 
-    let svg;
-
     useEffect(() => {
-        svg = d3.select(svgRef.current)
+        d3.select(svgRef.current)
             .attr("viewBox", `0 0 ${width} ${height}`);
     }, []);
 
@@ -28,7 +26,7 @@ export default function FooterBanner() {
                     </g>
                 </defs>
 
-                <g transform="translate(0, 20)">
+                <g transform={`translate(0, ${height - 500})`}>
                     <g className="float inverse">
                         <use href="#tri" fill="transparent" transform="translate(450, 380) rotate(-17) scale(0.75)"
                             strokeWidth="5.2" stroke="#fff" />
@@ -47,7 +45,7 @@ export default function FooterBanner() {
                     </g>
                 </g>
 
-                <g transform={`translate(${width - 300}, 20)`}>
+                <g transform={`translate(${width - 300}, ${height - 500})`}>
                     <g className="float inverse">
                         <use href="#tri" fill="#fff" transform="translate(150, 350) rotate(-17) scale(0.7)" />
                     </g>

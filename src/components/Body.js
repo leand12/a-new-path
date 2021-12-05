@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "styles/Body.css";
 import Presentation from 'components/Presentation';
 import Sections from 'components/Sections';
@@ -5,6 +6,19 @@ import logo from 'assets/logo.webp';
 import bg from 'assets/background.webp';
 
 export default function Body() {
+    const [mobile, setMobile] = useState(false);
+
+    useEffect(() => {
+        const mql = window.matchMedia('(min-width: 900px)');
+        mql.addEventListener('change', (e) => {
+            setMobile(!e.matches);
+        });
+
+        return () => {
+            mql.addEventListener('change', null);
+        };
+    })
+
     return (
         <>
             <div className="Body-triangle top">
@@ -12,11 +26,11 @@ export default function Body() {
             </div>
             <div id="Body" style={{ backgroundImage: `url(${bg})`, backgroundAttachment: 'fixed' }}>
                 <div className="Body-logo">
-                    <img src={logo} />
+                    <img src={logo} alt="Lista P" />
                 </div>
 
                 <div className="Body-content pt-5 pb-5">
-                    <div>
+                    <div className="px-1">
                         <h1 className="py-5 pt-md-0">Quem somos?</h1>
                         <p>A <strong>Lista P</strong> apresenta-se como candidata à coordenação do
                             NEI para o próximo mandato, com a finalidade de proporcionar
@@ -28,14 +42,14 @@ export default function Body() {
                         <a href="#">
                             <div className="social-hexagon-wrapper">
                                 <div className="social-hexagon">
-                                    <i class="fab fa-facebook"></i>
+                                    <i className="fab fa-facebook"></i>
                                 </div>
                             </div>
                         </a>
                         <a href="ListaP_NEI.pdf" download="ListaP_NEI.pdf">
                             <div className="social-hexagon-wrapper">
                                 <div className="social-hexagon">
-                                    <i class="fas fa-file-pdf"></i>
+                                    <i className="fas fa-file-pdf"></i>
                                 </div>
                             </div>
                         </a>
@@ -53,7 +67,7 @@ export default function Body() {
                     <div className="clip"></div>
                 </div>
 
-                <Presentation />
+                { mobile ? null : <Presentation /> }
                 <div className="Body-content white">
                     <Sections />
                 </div>

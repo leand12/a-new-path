@@ -9,9 +9,9 @@ import { styled } from '@mui/material/styles';
 
 
 const color = (i) => {
-    if (i % 3 == 0)
+    if (i % 3 === 0)
         return "0, 94, 124";
-    if (i % 3 == 1)
+    if (i % 3 === 1)
         return "0, 138, 82";
     return "0, 118, 106";
 }
@@ -113,7 +113,7 @@ export default function Sections() {
                         data[value].members.map((member, index) => (
                             <div key={index}
                                 className={classNames("hexagon-wrapper", { "bottom-fade-out": animation })}
-                                style={data[value].members.length == 1 ? { marginLeft: "25%" } : {}}
+                                style={data[value].members.length === 1 ? { marginLeft: "25%" } : {}}
                             >
                                 <div className="hexagon"
                                     style={{ backgroundImage: `url(${member.image})` }}

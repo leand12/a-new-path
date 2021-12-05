@@ -6,10 +6,8 @@ import "styles/Presentation.css";
 export default function Presentation() {
     const svgRef = useRef();
 
-    const width = window.screen.availWidth*.8;
-    const height = window.screen.availHeight*.8;
-
-    let svg;
+    const width = window.screen.availWidth * .8;
+    const height = window.screen.availHeight * .8;
 
     function moveHexaByScroll() {
         let scrollPos = d3.select("#Presentation").node().getBoundingClientRect().top - 250;
@@ -39,11 +37,16 @@ export default function Presentation() {
     }
 
     useEffect(() => {
-        svg = d3.select(svgRef.current)
+        d3.select(svgRef.current)
             .attr("viewBox", `0 0 ${width} ${height}`);
 
         d3.select(window)
-            .on('scroll.scroller', moveHexaByScroll)
+            .on('scroll.scroller', moveHexaByScroll);
+
+        return () => {
+            d3.select(window)
+                .on('scroll.scroller', null);
+        };
     }, []);
 
     return (

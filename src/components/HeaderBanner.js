@@ -1,21 +1,9 @@
 import { useEffect, useRef } from "react";
 
-import { styled } from '@mui/material/styles';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import Fab from '@mui/material/Fab';
 import * as d3 from "d3";
 
 import slogan from 'assets/slogan.webp';
 import 'styles/HeaderBanner.css';
-
-const CustomFab = styled((props) => (
-    <Fab {...props} />
-))({
-    boxShadow: '0px 1px 4px 1px rgba(0,0,0,0.12),0px 1px 4px 1px rgba(0,0,0,0.24)',
-    margin: '1rem',
-});
 
 
 export default function HeaderBanner() {
@@ -68,6 +56,11 @@ export default function HeaderBanner() {
         svg.on('mousemove', motionAnimation);
         d3.select(".HeaderBanner-slogan").on('mousemove', motionAnimation);
         floatAnimation();
+
+        return () => {
+            svg.on('mousemove', null);
+            d3.select(".HeaderBanner-slogan").on('mousemove', null);
+        };
     }, []);
 
     return (
