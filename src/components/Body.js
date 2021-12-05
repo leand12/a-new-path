@@ -10,6 +10,8 @@ export default function Body() {
 
     useEffect(() => {
         const mql = window.matchMedia('(min-width: 900px)');
+
+        setMobile(!mql.matches);
         mql.addEventListener('change', (e) => {
             setMobile(!e.matches);
         });
@@ -17,7 +19,7 @@ export default function Body() {
         return () => {
             mql.addEventListener('change', null);
         };
-    })
+    },[])
 
     return (
         <>
@@ -39,7 +41,9 @@ export default function Body() {
                     </div>
 
                     <div className="social">
-                        <a href="#">
+                        <a href="https://www.facebook.com/Lista-P-A-new-Path-102384102296563" 
+                            target="_blank" rel="noreferrer"
+                        >
                             <div className="social-hexagon-wrapper">
                                 <div className="social-hexagon">
                                     <i className="fab fa-facebook"></i>
@@ -53,7 +57,9 @@ export default function Body() {
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/lista_p_22/"
+                            target="_blank" rel="noreferrer"
+                        >
                             <div className="social-hexagon-wrapper">
                                 <div className="social-hexagon">
                                     <i className="fab fa-instagram"></i>
